@@ -1,0 +1,285 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+
+body {
+	line-height: 1;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/************************************
+GENERAL
+************************************/
+
+body {
+	font-family: arial;
+}
+
+
+/************************************
+HEADER
+************************************/
+
+header {
+	width: 100%;
+/*border: 0px solid black;*/
+	height: 40px;
+	text-align:right;
+
+}
+
+header a {
+	padding-left: 10px;
+	font: 0.8125em arial;
+	text-decoration: none;
+	color: black;
+}
+
+/*header div a:first-child {
+	margin-left: 1em;
+}
+*/
+header a:hover {
+	text-decoration: underline;
+}
+
+#app_icon {
+	width: 1.5625em;
+	height: 1.5625em;
+	padding-top: 0.375em;
+	margin-left: 1em;
+	margin-right: 7px;
+	position: relative;
+	top: .5em;
+	opacity: 0.6;
+}
+
+#app_icon:hover {
+	opacity: 1;
+}
+
+#login {
+	background-color: hsl(220, 100%, 65%);
+	border: 0px solid black;
+	color: white;
+	width: 73px;
+	height: 27px;
+	font-weight: bold;
+	font-size: .76em;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	margin-right: 2em;
+	outline:0;
+}
+
+#login:hover {
+	background-color: hsl(220, 90%, 60%);
+}
+/************************************
+MAIN BODY
+************************************/
+#main {
+	margin: 10.4% auto;
+	width: 35.5em;
+	/*max-width: 520px;*/
+	padding: 10px 1.5625em;
+	border: 0px solid black;
+	text-align: center;
+}
+
+#main #bg_logo{
+margin:0 auto;	
+width:18.5em;
+height: 5.93em;
+background: url('images/logo.png') no-repeat center;
+background-size: contain;
+
+}
+#main #bg_logo p{
+font-weight: bold;
+font-size: 1em;
+float:right;
+color: #7c7474;
+margin: 24% 3.5% 0% 8%;
+}
+
+#main #search_bar {
+	border: 1px solid #e3e3e3;
+	size: 50px;
+	width: 100%;
+	height: 1.9em;
+	margin-left: -2em;
+	margin-top: 1.5em;
+	outline: 0;
+}
+
+/* this is the microphone*/
+
+#main img{
+height: 1.25em;
+width: 1em;
+position: relative;
+top:0.375em;
+right:1.160em;
+opacity:0.6;	
+}
+
+#main img:hover{
+opacity:0.9;
+}
+/* micropphone end*/
+
+#main #search_bar:hover {
+	border: 1px solid #d2d2d2;
+}
+
+#main #search_bar:focus {
+	border: 1px solid #4775FF;
+}
+
+#main div {
+	margin-top: 1.2em;
+}
+
+
+#main div .button {
+	background-color: #f2f2f2;
+	border: 1px solid #c2c2c2;
+	color: #2a2a2a;
+	width: auto;
+	height: 30px;
+	font-weight:bold;
+	font-size: .68em;
+	padding 2px 9px;
+	margin-right: 10px;
+	outline:0;
+	margin: 0 1em 0.6em 0;
+	
+}
+
+
+#main div .button:hover{
+box-shadow: 0 .04em #777;
+-moz-box-shadow: 0 .04em #777;
+}
+
+#main p {
+	margin-top: 3.2em;
+	font-size: .80em;
+}
+
+#main a {
+	
+	padding-right: 0.6em;
+	text-decoration: none;
+}
+
+#main a:hover {
+	padding-right: 0.6em;
+	text-decoration: underline;
+}
+
+#main a:visited {
+	color: blue;
+}
+
+/************************************
+FOOTER
+************************************/
+
+
+footer {
+	position: fixed;
+	bottom: 0px;
+	background-color: #f2f2f2;
+	border-top: 1px solid #e2e2e2;
+	width: 100%;
+	height: 40px;
+	font-size: .82em;
+	color: #777;
+}
+
+footer .footnote ul li {
+	display: inline-block;
+}
+
+footer .footnote ul li:hover {
+	display: inline-block;
+	text-decoration: underline;
+}
+
+footer #left {
+	float: left;
+	margin-top: 0.97em;
+	margin-left: 2.32em;
+}
+
+footer #right  {
+	float: right;
+	margin-top: 0.97em;
+	margin-right: 0.5em;
+}
+
+footer  #right ul li {
+	padding-right: 2.09em;
+}
+
+footer  #left ul li {
+	padding-right: 2em;
+}
